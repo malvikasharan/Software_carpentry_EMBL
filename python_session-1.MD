@@ -42,7 +42,7 @@ We use the values of literals literally, these values represent themselves and n
 
 - Using literal constants will become boring
   - What does Python do if you write everything on my own?
-- Variables are variables, their values can change
+- Variables are the instances for which different values can be assigned
   - Allow storing of information in your computer’s memory
 - We need a method to access them by giving them names (Identifiers)
 
