@@ -1,10 +1,8 @@
 #Python session - 1
 
 ##Aim of this session: 
-1. Learn the basics (what is? how to?)
-2. How to read, write, manipulate and process information?
-3. How to get repeated tasks done without repeated coding?
-4. How to deal with scientific data using Python?
+
+Learn the basics (what is? how to?)
 
 ###Classic beginning with "Hello World!"
 
