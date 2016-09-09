@@ -6,15 +6,10 @@ Learn the basics (what is? how to?)
 
 ###Classic beginning with "Hello World!"
 
-- Open your terminal
-- Run Python (Type ‘python’ + Enter-key/click run button)
-- Print something on terminal
+- Run Python (Type ‘python’ + click run button)
+- Print something
 ```
 print(“Hello World!”)
-```
-
-```
-quit()
 ```
 
 ###Literal Constants
@@ -45,8 +40,7 @@ We use the values of literals literally, these values represent themselves and n
 
 ###Variables
 
-- Using literal constants will become boring
-  - What does Python do if you write everything on my own?
+- Using literal constants will become boring (what does Python do if you write everything on my own?
 - Variables are the instances for which different values can be assigned
   - Allow storing of information in your computer’s memory
 - We need a method to access them by giving them names (Identifiers)
@@ -61,46 +55,46 @@ We use the values of literals literally, these values represent themselves and n
 
 The string format operators allows formatting output of an ordered strings
 
-  - Previous example
-  ```
-  print(“Age of”, name, “is”, age)
-  ```
-  - Pythonic way 1: 
-  ```
-  print(“Age of {} is {}”.format(name, age))
-  ```
-  - Pythonic way 2: 
-  ```
-  print(“Age of %s is %s” % (name, age))
-  ```
-  - There are several options with %:
-  - %s: string
-  - %d: decimal point number
-  - %f: float point number
-  - %.2f: float point number to 2 decimal places
+- Previous example
+```
+print(“Age of”, name, “is”, age)
+```
+- Pythonic way 1: 
+```
+print(“Age of {} is {}”.format(name, age))
+```
+- Pythonic way 2: 
+```
+print(“Age of %s is %s” % (name, age))
+```
+- There are several options with %:
+- %s: string
+- %d: decimal point number
+- %f: float point number
+- %.2f: float point number to 2 decimal places
 
 ##Excercise - 2
 
 - Assign any value to variable i, print and check the value
-  ```
-  i = 10
-  ```
+```
+i = 10
+```
 - Reassign a different value to i, print and check
-  ```
-  i = 23
-  ```
+```
+i = 23
+```
   - You just overwrote the value of i, the last assigned value is the current value
 - Assign multiple variables same values, print and check
-  ```
-  a = b = c = 59
-  ```
+```
+a = b = c = 59
+```
 - Assign multiple variables (a, b, c) different values
 - Option - 1
-  ```
-  a = 1
-  b = 2 
-  c = 3
-  ```
+```
+a = 1
+b = 2 
+c = 3
+```
 - Option - 2
   ```
   a, b, c = 1, 2, 3
@@ -110,15 +104,15 @@ The string format operators allows formatting output of an ordered strings
 
 - Operators are functionality that do something and can be represented by the symbols such as + or special keywords
 - Operators operate on data referred as operands, here the numbers and letters are operands and the symbols (+,* ...) are operators
-  ```
-  4 + 6
-  ```
-  ```
-  5 * 8
-  ```
-  ```
-  'a' + 'b'
-  ```
+```
+4 + 6
+```
+```
+5 * 8
+```
+```
+'a' + 'b'
+```
 
 ##Exercise - 3
 
@@ -129,55 +123,55 @@ x = 20
 y = 98
 ```
 
-1. Sum x and y by plus
+- Sum x and y by plus
 ```
 x + y
 ```
-2. Subtract y from x by minus
+- Subtract y from x by minus
 ```
 x - y
 ```
-3. Multiply x and y
+- Multiply x and y
 ```
 x * y
 ```
-4. Multiply a string with y
+- Multiply a string with y
 ```
 ‘X’ * y
 ```
-5. Return x to the power of y
+- Return x to the power of y
 ```
 x**y
 ```
-6. Divide x by y
+- Divide x by y
 ```
 x/y
 ```
-7. Return remainder of x divided by y
+- Return remainder of x divided by y
 ```
 x % y
 ```
-8. Check if x is greater than y
+- Check if x is greater than y
 ```
 x > y
 ```
-9. Check if x is smaller than y
+- Check if x is smaller than y
 ```
 x < y
 ```
-10. Check if x is less than or equal to 100
+- Check if x is less than or equal to 100
 ```
 x <= 100
 ```
-11. Check if y is greater than or equal to 5
+- Check if y is greater than or equal to 5
 ```
 y >= 100
 ```
-12. Check if x is equal to y
+- Check if x is equal to y
 ```
 x == y
 ```
-13. Check if x is not equal to y
+- Check if x is not equal to y
 ```
 x != y
 ```
@@ -193,30 +187,33 @@ We can use multiple operators together
 - AS: Addition and Subtraction (left-to-right)
 
 - Division before multiplication and addition before subtraction
-- However the order can be altered by using brackets
-  
-  ```
-  4/2*3+1-5 = 2 but 4/2*(3+1-5) = -2
-  ```
-  - Use multiple operators (example: x+y*y/x)
+- However the order can be altered by using brackets, for example
+```
+4/2*3+1-5 = 2 but 4/2*(3+1-5) = -2
+```
+
+- Use multiple operators
+```
+x+y*y/x)
+```
 
 - Operands can be over-written
-  - Solution – 1
-    - Assign a value to variable a
-    - Reassign/overwrite value of a as a * 3
-      ```
-      a = 2
-      a = a * 3
-      a
-      ```
-  - Solution – 2
-    - Assign a value to variable a
-    - Reassign/overwrite value of a as a * 3
-      ```
-      a = 2
-      a *= 3
-      a
-      ```
+- Solution – 1
+  - Assign a value to variable a
+  - Reassign/overwrite value of a as a * 3
+```
+a = 2
+a = a * 3
+a
+```
+- Solution – 2
+  - Assign a value to variable a
+  - Reassign/overwrite value of a as a * 3
+```
+a = 2
+a *= 3
+a
+```
 
 ###Data structure - 1
 
@@ -225,14 +222,14 @@ We can use multiple operators together
   - List (list): holds ordered collection of objects separated by comma
     - Objects are present in the given order any change in introduced
     - Lists are mutable: data can be added and removed
-    - An empty list are created as
-    ```
-    my_list = []
-    ```
-    - A list with values are created as
-    ```
-    my_list = [1, 2, ‘a’, ‘b’]
-    ```
+- An empty list are created as
+```
+my_list = []
+```
+- A list with values are created as
+```
+my_list = [1, 2, ‘a’, ‘b’]
+```
 
 ##Exercise - 4
 
@@ -241,95 +238,100 @@ We can use multiple operators together
 help(list)
 ```
 
-1. create a list with five items and follow the exercise
+- create a list with five items and follow the exercise
 ```
 my_list = [1, 2, ‘C’, 4, ‘E’]
 ```
-2. Add/append an item
+- Add/append an item
 ```
 my_list.append(‘X’)
 ```
-3. Access the list item by index, which are the position of items (counted from 0)
-  - Access the 1st item (square brackets to define the index)
-  ```
-  my_list[0] 
-  ```
-  - Access the last item
-  ```
-  my_list[-1]
-  ```
-  - Access the 4th item (?)
-  ```
-  my_list[...]
-  ```
-  - Access items from position 2 to 4. Here 4 means item in the 5th position, last mentioned index is not accessed
-  ```
-  my_list[1:4] 
-  ```
-  - More exercises
-    - Access items at the index 2 to the second last position (?)
-    - Access items from the beginning to the position 4
-    ```
-    mylist[:4]
-    ```
-    - Access items at the index 2 to the last position (?)
-4. Insert an item in the 4th position
+- Access the list item by index, which are the position of items (counted from 0)
+- Access the 1st item (square brackets to define the index)
+```
+my_list[0] 
+```
+- Access the last item
+```
+my_list[-1]
+```
+- Access the 4th item (?)
+```
+my_list[...]
+```
+- Access items from position 2 to 4. Here 4 means item in the 5th position, last mentioned index is not accessed
+```
+my_list[1:4] 
+```
+- Access items at the index 2 to the second last position (?)
+```
+```
+- Access items from the beginning to the position 4
+```
+mylist[:4]
+```
+- Access items at the index 2 to the last position (?)
+```
+```
+- Insert an item in the 4th position
 ```
 my_list.insert(3, ‘X’)
 ```
-5. Check the items in the list and find the number of items
+- Check the items in the list and find the number of items
 ```
 len(my_list)
 ```
-6. Remove ‘X’ from the list. Check the length again
+- Remove ‘X’ from the list. Check the length again
 ```
 my_list.remove(‘X’)
 ```
-5. Remove an item from a position from any index (i=3)
+- Remove an item from a position from any index (i=3)
 ```
 my_list.pop([i])
 ```
-8. Get maximum value in the list
+- Get maximum value in the list
 ```
 max(my_list)
 ```
-9. Get minimum value in the list (letters are considered larger than digits)
+- Get minimum value in the list (letters are considered larger than digits)
 ```
 min(my_list)
 ```
-10. Reverse items in the list
+- Reverse items in the list
 ```
 my_list.reverse()
 ```
-11. Sort items of the list
+- Sort items of the list
 ```
 sorted(my_list)
 ```
-12. Reverse the items again
-13. Summed up the value of a list containing all the numerical items: sum(list_num)
+- Reverse the items again
+```
+```
+- Summed up the value of a list containing all the numerical items: sum(list_num)
 ```
 list_num = [1, 2, 3, 4]
 ```
-13. Convert a string into list
+- Convert a string into list
 ```
 my_string = ‘convert string into list’
 list(my_string)
 ```
-14. Count the occurrence of an item
-  - hint-1: 
-  ```
-  list(‘convert string into list’).count(‘t’)
-  ```
-  - hint-2: 
-  ```
-  new_list = list(‘convert string into list’)
-  new_list.count(‘t’)
-  ```
-15. Convert a string into list by splitting it by space
+- Count the occurrence of an item
+- hint-1: 
+```
+list(‘convert string into list’).count(‘t’)
+```
+- hint-2: 
+```
+new_list = list(‘convert string into list’)
+new_list.count(‘t’)
+```
+- Convert a string into list by splitting it by space
 ```
 my_string.split(‘  ’)
 ```
-16. Get unique items of the list
+- Get unique items of the list
 ```
 set(new_list)
 ```
@@ -337,48 +339,50 @@ Note: Set is another data structute, with an unordered collection without duplic
 ```
 my_set = set()
 ```
-17. Dealing with two lists: define 2 lists with some items (list1 and list2)
-  - Create a third list as list3
-  ```
-  list3 = list1 + list2
-  ```
-  - Extend list1 by list2
-  ```
-  list1.extend(list2)
-  ```
-  - Create a list with only unique items from the lists
-  ```
-  set(list1).union(list2)
-  ```
-  - Find common items in the lists
-  ```
-  set(list1).intersection(list2)
-  ```
+- Dealing with two lists: define 2 lists with some items (list1 and list2)
+```
+```
+- Create a third list as list3
+```
+list3 = list1 + list2
+```
+- Extend list1 by list2
+```
+list1.extend(list2)
+```
+- Create a list with only unique items from the lists
+```
+set(list1).union(list2)
+```
+- Find common items in the lists
+```
+set(list1).intersection(list2)
+```
 
 ###Data structure - 2
 
 - Dictionary (dict): a list of key-value pairs where key can be any numbers or strings and values can be any arbitrary python object
-  - An empty dict is created as
-  ```
-  my_dict = {}
-  ```
-  or 
-  ```
-  my_dict()
-  ```
-  - Key and value are separated by a colon (:)
-  - A list with key-value pairs are created as
-  ```
-  my_dict = {‘Key_1’: ‘Val_1’}
-  ```
+- An empty dict is created as
+```
+my_dict = {}
+```
+or 
+```
+my_dict()
+```
+- Key and value are separated by a colon (:)
+- A list with key-value pairs are created as
+```
+my_dict = {‘Key_1’: ‘Val_1’}
+```
   
 ##Excercise - 5
 
-1. Create a dictionary with key-value pairs
+- Create a dictionary with key-value pairs
 ```
 my_dict = {‘name’ : ‘Khaleesi’, ‘age’ : 20}
 ```
-2. Access value by a key
+- Access value by a key
 ```
 my_dict[‘name’]
 ```
@@ -386,61 +390,38 @@ or
 ```
 my_dict.get(‘name’)
 ```
-3. Add more items to the dictionary
+- Add more items to the dictionary
 ```
 my_dict[‘occupation’] = ‘Queen’
 ```
-4. Print all the items
+- Print all the items
 ```
 my_dict
 ```
-4. Print all the key-value pairs as list
+- Print all the key-value pairs as list
 ```
 my_dict.items()
 ```
-5. Print all the keys of the dictionary as list
+- Print all the keys of the dictionary as list
 ```
 my_dict.keys()
 ```
-6. Print all the values of the dictionary as list
+- Print all the values of the dictionary as list
 ```
 my_dict.values()
 ```
-7. Remove a key-value pair
+- Remove a key-value pair
 ```
 my_dict.pop(‘age’)
 ```
-8. Remove the last key-value pair
+- Remove the last key-value pair
 ```
 my_dict.popitem()
 ```
-9. Check if a key is in the dict: ‘location’ in my_dict and ‘age’ in my_dict
+- Check if a key is in the dict: ‘location’ in my_dict and ‘age’ in my_dict
 ```
 ```
-10. Remove all the items from the dict
+- Remove all the items from the dict
 ```
 my_dict.clear()
 ```
-
-  
-
-
-
-
-
-
-  
-
- 
-
-
-
-  
-
-
-
-  
-
-
-  
-
