@@ -34,7 +34,7 @@ We use the values of literals literally, these values represent themselves and n
 - Print multiple strings and numbers together
   - Hint 1: use comma as separator
   - Hint 2: use plus sign (+) to connect 
-    - gives error (or sum, when int1+int2) with numbers, how to solve this?
+    - This gives error (or sum, when int1+int2) with numbers, how to solve this?
 - Print a string with double quote
   - Example: “this string appears with double quotes”
 
@@ -97,9 +97,9 @@ b = 2
 c = 3
 ```
 - Option - 2
-  ```
-  a, b, c = 1, 2, 3
-  ```
+```
+a, b, c = 1, 2, 3
+```
 
 ###Opertaors and operands
 
