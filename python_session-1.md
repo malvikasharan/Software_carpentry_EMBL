@@ -73,11 +73,11 @@ The string format operators allows formatting output of an ordered strings
   ```
   print(“Age of %s is %s” % (name, age))
   ```
-    - There are several options with %:
-    - %s: string
-    - %d: decimal point number
-    - %f: float point number
-    - %.2f: float point number to 2 decimal places
+  - There are several options with %:
+  - %s: string
+  - %d: decimal point number
+  - %f: float point number
+  - %.2f: float point number to 2 decimal places
 
 ##Excercise - 2
 
