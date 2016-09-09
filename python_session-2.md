@@ -4,7 +4,7 @@
 
 Control flow: automating repeated boring tasks using loops rather than actively commanding Python to do stuffs (print, add etc.)
 
-Control-flow allows Python to take a decision and do different things depending on different situations using if/else or for loops
+Control-flow allows Python to take a decision and do different things depending on different situations using `if/else statements` or `for loops`
 
 ###if loop
 
@@ -135,7 +135,7 @@ else:
     print("{} contains {}".format(my_string, my_item)
 ```
 
-###Styling tip: annotate your codes so others can read and understand what your code is doing
+####Styling tip: annotate your codes so others can read and understand what your code is doing
 
 ```
 """ 
@@ -165,8 +165,28 @@ Flow-chart exercise will be added here
 
 
 ###For loop
+
+Most often we carry out the same task repeatedly to extract/update information, for example reading each items in list or dict or reading several files of same file format. This can be easily done by `for-loops` or `for ... in ...:` statement is the most powerful way to tackle the repeated tasks.
+
+Example - 1
+```
+#use range to create a list of values
+for entry in ramge(1,5):
+    print(entry*456)
+```
+Example - 2
 ```
 shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
 for item in shopping:
   print(item)
 ```
+Example - 3
+```
+shopping_dict = ['item-0': 'bread', 'item-1': 'potatoes', 'item-2': 'eggs', 'item-3': 'flour', 'item-4': 'rubber duck', 'item-5': 'pizza', 'item-6': 'milk']
+for item in shopping:
+  print(item)
+```
+
+####Excercise - 4
+
+
