@@ -383,7 +383,7 @@ my_dict = {‘Key_1’: ‘Val_1’}
 
 Create a dictionary with key-value pairs
 ```
-my_dict = {‘name’ : ‘Khaleesi’, ‘age’ : 20}
+my_dict = {‘name’: ‘Khaleesi’, ‘age’: 20}
 ```
 Access value by a key
 ```
