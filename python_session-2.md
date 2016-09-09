@@ -55,6 +55,7 @@ We can interact with the commandline/terminal using `input()`, try it out by giv
 temperature = input()
 ````
 
+Now try this block of code
 ```
 temperature = input()
 if temperature > 25:
@@ -65,6 +66,75 @@ else:
     print("The temperature is 25 degree.")
 ```
 
+Adding even more conditions (conditions inside conditions)
+- Option - 1: not so elegant nested if statements
+```
+if ...:
+    if ...:
+    elif ...:
+    ...
+    else ...:
+elif ...:
+    if ...:
+    elif ...:
+    ...
+    else ...:
+elif ...:
+    ...
+else:
+    ...
+```
+
+- Option - 2: connecting conditions by Boolean (and, or, not)
+```
+temperature = input()
+if temperature >= 25 and temperature < 37:
+    print("Nice weather!")
+elif temperature < 25:
+    print("Winter is coming!")
+else:
+    print("You gave a wrong value!")
+```
+
+Give temperature a value < 25 and check what happens if you replace 'and' with 'or'
+Warning: English's 'or' and Python 'or' are not always same
+
+####Excercise - 2
+
+Some more useful use of if-statements
+
+Check if a variable or data type exists (not empty)
+
+```
+my_list = []
+if my_list:
+    print("my_list if not empty!")
+else:
+    my_list.append("something")
+    print("I added something to my_list")
+```
+
+Check if an item exists in a string (hint: if item in string:)...
+```
+my_string = "Whether you're new to programming or an experienced developer, it's easy to learn and use Python."
+my_item = "Python"
+
+if my_item in my_string:
+    print(my_string)
+else:
+    print("{} does not contain {}".format(my_string, my_item)
+```
+...or does not exist
+
+```
+my_string = "Whether you're new to programming or an experienced developer, it's easy to learn and use Python."
+my_item = "Perl"
+
+if my_item not in my_string:
+    print(my_string)
+else:
+    print("{} contains {}".format(my_string, my_item)
+```
 
 ###For loop
 ```
