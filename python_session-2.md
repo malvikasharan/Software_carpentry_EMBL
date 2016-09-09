@@ -129,12 +129,40 @@ else:
 ```
 my_string = "Whether you're new to programming or an experienced developer, it's easy to learn and use Python."
 my_item = "Perl"
-
 if my_item not in my_string:
     print(my_string)
 else:
     print("{} contains {}".format(my_string, my_item)
 ```
+
+###Styling tip: annotate your codes so others can read and understand what your code is doing
+
+```
+""" 
+This is a Docstring. 
+This script gives its opinion on weather
+"""
+temperature = input()
+if temperature >= 25 and temperature <= 37: # checks if the value is between 24 and 37
+    print("Nice weather!")
+elif temperature < 25:                      # checks if the value is less than 25
+    print("Winter is coming!")
+else:
+    print("You gave a wrong value!")        # prompts if the value is not numerical
+```
+
+####Excercise - 3
+
+Given a list of items check if a certain item exists, else add that item to the list
+```
+shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
+my_item = "cheese"
+if item not in shopping:
+    shopping.append(item)
+```
+
+Flow-chart exercise will be added here
+
 
 ###For loop
 ```
