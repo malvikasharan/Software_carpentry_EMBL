@@ -186,7 +186,53 @@ shopping_dict = ['item-0': 'bread', 'item-1': 'potatoes', 'item-2': 'eggs', 'ite
 for item in shopping:
   print(item)
 ```
+Example - 4
+```
+shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
+extrashopping = ['cheese', 'flour', 'eggs', 'spaghetti', 'sausages', 'bread']
+for item in extrashopping:
+    if item not in shopping:
+        shopping.append(item)
+print(shopping) 
+```
 
 ####Excercise - 4
+(i) Change the program above to print out a message when a duplicate item is found. To do this, you could add another if statement to see if the item is in the list. Alternatively, you can add an else: clause to the existing if statement. This will be executed when the condition in the if statement is false.
+```
+```
 
+(ii) The example illustrated above is not the only solution to adding items to a list, whilst checking for duplicates. From the three choices below, choose the version that would achieve the same goal:
 
+a)
+```
+shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
+extrashopping = ['cheese', 'flour', 'eggs', 'spaghetti', 'sausages', 'bread']
+for item in extrashopping:
+    if item not in shopping:   
+        print item, "is already in the list."
+    else: 
+        shopping.append(item)
+print(shopping)
+```
+b)
+```
+shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
+extrashopping = ['cheese', 'flour', 'eggs', 'spaghetti', 'sausages', 'bread']
+for item in extrashopping:
+    if item in shopping:
+        shopping.append(item)
+    else: 
+        print item, "is already in the list."
+print(shopping)
+```
+c)
+```
+shopping = ['bread', 'potatoes', 'eggs', 'flour', 'rubber duck', 'pizza', 'milk']
+extrashopping = ['cheese', 'flour', 'eggs', 'spaghetti', 'sausages', 'bread']
+for item in extrashopping:
+    if item in shopping:
+        print item, "is already in the list."
+    else: 
+        shopping.append(item)
+print(shopping)
+```
