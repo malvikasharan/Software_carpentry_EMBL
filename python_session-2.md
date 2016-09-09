@@ -6,7 +6,7 @@ Control flow: automating repeated boring tasks using loops rather than actively 
 
 Control-flow allows Python to take a decision and do different things depending on different situations using `if/else statements` or `for loops`
 
-###if loop
+###if-statements
 
 The `if-statement` is used to check a condition as true or false
 - if the condition is true, block of codes inside the if statement (starts with a tab or four spaces) will be executed
@@ -25,7 +25,7 @@ if temperature > 25:
     print("Nice weather!")
 ```
 
-###if/else loop
+###if/else-statements
 
 The `else-statement` allows Python to read and execute another block of code id the if-statement is false
 
@@ -236,3 +236,5 @@ for item in extrashopping:
         shopping.append(item)
 print(shopping)
 ```
+
+###Functions
