@@ -465,6 +465,7 @@ for season in ['Spring', 'Summer', 'Autumn', 'Winter']:
 - the "loop variable" - `season` in the example above
   - stores the value aken from the sequence in the current iteration.
 - "sequence" means list, dict, string, tuple, and more...
+
 ### if/else
 As well as looping, the other key ingredient to programming automated processes is "flow control" i.e. executing different instructions depending on some detectable factor.
 
