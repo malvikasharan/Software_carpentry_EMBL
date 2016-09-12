@@ -469,7 +469,9 @@ for season in ['Spring', 'Summer', 'Autumn', 'Winter']:
 As well as looping, the other key ingredient to programming automated processes is "flow control" i.e. executing different instructions depending on some detectable factor.
 
 ```
-if pet == "cat":
-	needs = ["fish", "milk", "mice", "sleep"]
+if weather == 'sunny':
+	need_to_buy = 'sunblock'
 else:
-	needs = ["meat", "walks", "water"]
+	need_to_buy = 'an umbrella'
+print('Before I go on holiday, I need to buy', need_to_buy)
+```
