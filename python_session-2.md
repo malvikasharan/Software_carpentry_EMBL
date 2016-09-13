@@ -98,7 +98,7 @@ else:
 
 Give temperature a value < 25 and check what happens if you replace 'and' with 'or'
 
-#####Warning: English's 'or' and Python 'or' are not always same#####
+#####Warning: English's *or* and Python's *or* are not always same#####
 
 ####Excercise - 2
 
