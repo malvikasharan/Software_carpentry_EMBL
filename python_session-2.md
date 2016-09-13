@@ -4,11 +4,11 @@
 
 Control flow: automating repeated boring tasks using loops rather than actively commanding Python to do stuffs (print, add etc.)
 
-Control-flow allows Python to take a decision and do different things depending on different situations using `if/else statements` or `for loops`
+Control-flow allows Python to take a decision and do different things depending on different situations using `if` or `else` statements or `for loops`
 
-###if-statements
+###if statements
 
-The `if-statement` is used to check a condition as true or false
+The `if` statement is used to check a condition as true or false
 - if the condition is true, block of codes inside the if statement (starts with a tab or four spaces) will be executed
 
 The code below checks if the value of temperature is greater than 25 (degree). Since it's true for the block of code below, Python executes it
@@ -18,16 +18,16 @@ if temperature > 25:
     print("Nice weather!")
 ```
 
-If we change the value of temperature to 20, the if-statement becomes false and Python does not further read the codes that belong the if-statement 
+If we change the value of temperature to 20, the if statement becomes false and Python does not further read the codes that belong the if statement 
 ```
 temperature = 20
 if temperature > 25:
     print("Nice weather!")
 ```
 
-###if/else-statements
+###if/else statements
 
-The `else-statement` allows Python to read and execute another block of code id the if-statement is false
+The `else` statement allows Python to read and execute another block of code id the if statement is false
 
 ```
 temperature = 20
@@ -37,7 +37,7 @@ else:
     print("Winter is coming!")
 ```
 
-Multiple conditions can be given by introducing `elif-statement`
+Multiple conditions can be given by introducing `elif` statement
 ```
 temperature = 20
 if temperature > 25:
@@ -48,7 +48,7 @@ else:
     print("The temperature is 25 degree.")
 ```
 
-####Excercise - 1
+####Exercise - 1
 
 We can interact with the commandline/terminal using `input()`, try it out by giving a value to the temperature on the commandline
 ```
@@ -100,9 +100,9 @@ Give temperature a value < 25 and check what happens if you replace 'and' with '
 
 #####Warning: English's *or* and Python's *or* are not always same#####
 
-####Excercise - 2
+####Exercise - 2
 
-Some more useful use of if-statements
+Some more useful use of if statements
 
 Check if a variable or data type exists (not empty)
 
@@ -152,7 +152,7 @@ else:
     print("You gave a wrong value!")        # prompts if the value is not numerical
 ```
 
-####Excercise - 3
+####Exercise - 3
 
 Given a list of items check if a certain item exists, else add that item to the list
 ```
@@ -212,7 +212,7 @@ for item in extrashopping:
 print(shopping) 
 ```
 
-####Excercise - 4
+####Exercise - 4
 (i) Change the program above to print out a message when a duplicate item is found. To do this, you could add another if statement to see if the item is in the list. Alternatively, you can add an else: clause to the existing if statement. This will be executed when the condition in the if statement is false.
 ```
 ```
