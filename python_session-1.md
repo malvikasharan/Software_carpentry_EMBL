@@ -203,7 +203,7 @@ Evaluation order is what high school taught us: BODMAS
 
 Use multiple operators
 ```
-x+y*y/x)
+x+y*(y/x)
 ```
 
 Operands can be over-written
