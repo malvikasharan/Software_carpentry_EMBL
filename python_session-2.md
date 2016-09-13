@@ -109,7 +109,7 @@ Check if a variable or data type exists (not empty)
 ```
 my_list = []
 if my_list:
-    print("my_list if not empty!")
+    print("my_list is not empty!")
 else:
     my_list.append("something")
     print("I added something to my_list")
