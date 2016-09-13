@@ -97,7 +97,8 @@ else:
 ```
 
 Give temperature a value < 25 and check what happens if you replace 'and' with 'or'
-Warning: English's 'or' and Python 'or' are not always same
+
+--Warning: English's 'or' and Python 'or' are not always same--
 
 ####Excercise - 2
 
@@ -172,7 +173,7 @@ Example - 1
 
 ```
 #use range to create a list of values
-for entry in ramge(1,5):
+for entry in range(1,5):
     print(entry*456)
 ```
 Example - 2
