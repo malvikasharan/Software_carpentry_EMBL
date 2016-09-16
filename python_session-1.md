@@ -340,7 +340,7 @@ my_list.reverse()
 ```
 Sort items of the list
 ```
-sorted(my_list)
+my_list.sort()
 ```
 Reverse the items again
 ```
