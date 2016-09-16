@@ -459,10 +459,6 @@ Remove a key-value pair
 ```
 my_dict.pop("age")
 ```
-Remove the last key-value pair
-```
-my_dict.popitem()
-```
 Check if a key is in the dict: "location" in my_dict and "age" in my_dict
 ```
 ```
