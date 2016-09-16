@@ -274,43 +274,54 @@ for item in extrashopping:
 print(shopping)
 ```
 
-###Functions
+### Functions
 
-Functions are the reusable  block of code that you can be named and executed any number of times from different parts of a/several script(s). This reusability is called calling the function. Function is important building block of a software.
+Functions are the reusable  block of code that you define, and can be executed any number of times from different parts of any script(s) you write. This reusability is called "calling the function". 
+Functions are highly important building blocks of any program.
 
 You have been using built-in functions already, for example: len(), range(), sorted(), max(), min(), sum() etc.
 
 #### Structure of writing a function:
 
-def (keyword) + function name (you choose) + (): 
-newline with 4 spaces or a tab +  block of code # Note: Codes at the 0 position are always read
-Call your function
+* def (keyword) + function name (you choose) + (): 
+* newline with 4 spaces or a tab +  block of code
+* Call your function
 
 #### Non parametric function
+
+```
  def say_hi():
     print("hi")
+```
     
 #### Parametric function
+
+```
 def say_hi(name): # here name is a variable
     print("hi {}".format(name))
 name = 'Greg''
 say_hi(name)
+```
 
 #### Returning values
+```
 def say_hi(name): # here name is a variable
     greet = "hi {}".format(name)
     return greet
 
-name = 'Greg''
+name = 'Greg'
 print(say_hi(name))
+```
 
 #### Local Vs. global variable
 
+```
 def say_hi(name): # here name is a variable
     greet = "hi {}".format(name)    # greet is a local variable, this is known only inside a function
     return greet
 current_greet = say_hi(name)        # current_greet is a global variable, known outside a function
 print(current_greet)                # global variables can be further manipulated
+```
 
 
 ### Exercises
