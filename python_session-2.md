@@ -170,7 +170,7 @@ Flow-chart exercise will be added here
 
 ###For loop
 
-Most often we carry out the same task repeatedly to extract/update information, for example reading each items in list or dict or reading several files of same file format. This can be easily done by `for-loops` or `for ... in ...:` statement is the most powerful way to tackle the repeated tasks.
+Most often we carry out the same task repeatedly to extract/update information, for example reading each items in list or dict or reading several files of same file format. This can be easily done by `for` loops` or `for ... in ...:` statement is the most powerful way to tackle the repeated tasks.
 
 Example - 1
 
