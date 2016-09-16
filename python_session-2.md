@@ -8,17 +8,17 @@ Flow control allows Python to take a decision and do different things depending 
 
 ###if statements
 
-The `if` statement is used to check a condition as true or false
-- if the condition is true, block of codes inside the if statement (starts with a tab or four spaces) will be executed
+The `if` statement is used to check a condition as __True__ or __False__
+- if the condition is __True__, block of codes inside the if statement (starts with a tab or four spaces) will be executed
 
-The code below checks if the value of temperature is greater than 25 (degree). Since it's true for the block of code below, Python executes it
+The code below checks if the value of temperature is greater than 25 (degree). Since it's __True__ for the block of code below, Python executes it
 ```
 temperature = 26
 if temperature > 25:
     print("Nice weather!")
 ```
 
-If we change the value of temperature to 20, the if statement becomes false and Python does not further read the codes that belong the if statement 
+If we change the value of temperature to 20, the if statement becomes __False__ and Python does not further read the codes that belong the if statement 
 ```
 temperature = 20
 if temperature > 25:
@@ -27,7 +27,7 @@ if temperature > 25:
 
 ###if/else statements
 
-The `else` statement allows Python to read and execute another block of code id the if statement is false
+The `else` statement allows Python to read and execute another block of code id the if statement is __False__
 
 ```
 temperature = 20
@@ -213,7 +213,7 @@ print(shopping)
 ```
 
 ####Exercise - 4
-(i) Change the program above to print out a message when a duplicate item is found. To do this, you could add another if statement to see if the item is in the list. Alternatively, you can add an else: clause to the existing if statement. This will be executed when the condition in the if statement is false.
+(i) Change the program above to print out a message when a duplicate item is found. To do this, you could add another if statement to see if the item is in the list. Alternatively, you can add an else: clause to the existing if statement. This will be executed when the condition in the if statement is __False__
 ```
 ```
 
