@@ -139,6 +139,9 @@ Operators are functionality that do something and can be represented by the symb
 ```
 'a' + 'b'
 ```
+```
+'5' + '3' # what do you expect here?
+```
 
 ##Exercise - 3
 
