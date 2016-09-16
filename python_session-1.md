@@ -1,10 +1,10 @@
 #Python session - 1
 
-##Aim of this session: 
+## Aim of this session: 
 
 Learn the basics (what is? how to?)
 
-###Classic beginning with "Hello World!"
+### Classic beginning with "Hello World!"
 
 - Run Python (Type "python" + click run button)
 - Print something
@@ -13,7 +13,7 @@ print('Hello World!')
 ```
 - pandas import, read_table, plot() example
 
-###Literal Constants
+### Literal Constants
 
 We use the values of literals literally, these values represent themselves and nothing else.
 
@@ -41,7 +41,7 @@ Comments are an incredibly useful way to keep track of what you are doing in
 your code. Use comments to document what you do as much as possible, it will
 pay off in the long run.
 
-##Exercise - 1
+## Exercise - 1
 
 - Print more strings
 - Print numbers 
@@ -54,7 +54,7 @@ pay off in the long run.
 - Print a string with double quote
   - Example: 'this string appears with double quotes'
 
-###Variables
+### Variables
 
 - Using literal constants will become boring (what does Python do if you write everything on your own?)
 - Variables are the instances for which different values can be assigned
@@ -63,7 +63,7 @@ pay off in the long run.
   - by giving them names (Identifiers)
 - value assignment is done with single equals symbol `=`
 
-####Rules:
+#### Rules:
 - The identifiers are case sensitive 
   - myname and MyName are different
 - must be unique (python will overwrite value of existing variable without warning you)
@@ -72,11 +72,11 @@ pay off in the long run.
 
 
 
-####Conventions
+#### Conventions
 - The name starts with a (usually lower case) letter
 - Followed by letters, underscores or digits (name_1)
 
-###String formatter
+### String formatter
 
 The string format operators allows formatting output of strings, substituting in values of variables
 
@@ -98,7 +98,7 @@ There are several options with %:
 - %f: float point number
 - %.2f: float point number to 2 decimal places
 
-##Exercise - 2
+## Exercise - 2
 
 Assign any value to variable i, print and check the value
 ```
@@ -126,7 +126,7 @@ c = 3
 a, b, c = 1, 2, 3
 ```
 
-###Operators and operands
+### Operators and operands
 
 Operators are functionality that do something and can be represented by the symbols such as + or special keywords
 - Operators operate on data referred as operands, here the numbers and letters are operands and the symbols (+,* ...) are operators
@@ -143,7 +143,7 @@ Operators are functionality that do something and can be represented by the symb
 '5' + '3' # what do you expect here?
 ```
 
-##Exercise - 3
+## Exercise - 3
 
 Assign numerical values to x and y and do the following
 
@@ -205,7 +205,7 @@ Check if x is not equal to y
 x != y
 ```
 
-###Math operators and operands
+### Math operators and operands
 
 We can use multiple operators together
 
@@ -244,7 +244,7 @@ a *= 3
 a
 ```
 
-###Data structure - 1
+### Data structure - 1
 
 Data Structures are containers that hold/store a collection of data/object together 
 There are two built-in data structures that we will discuss here
@@ -268,7 +268,7 @@ my_list = [1, 2, "a", "b"]
 - use `help(x)` to see the documentation (if it exists) for `x`
 - use `dir(y)` to see the available attributes and methods for `y`
 
-##Exercise - 4
+## Exercise - 4
 
 Print and check at each step
 ```
@@ -396,7 +396,7 @@ Find common items in the lists
 set(list1).intersection(list2)
 ```
 
-###Data structure - 2
+### Data structure - 2
 
 Dictionary (dict): a list of key-value pairs where key can be any numbers or string and values can be any arbitrary python object
 
@@ -417,11 +417,11 @@ my_dict = {"Key_1": "Val_1"}
 
 keys must be unique (trying to create a second entry in the dict for a key will overwrite the existing value for that key)
 
-####Aside: mutable vs non-mutable
+#### Aside: mutable vs non-mutable
 Why did we say that you can only use strings and numbers as keys in a dict? These object types are _immutable_ - their value cannot be changed in place. Lists and dictionaries are _mutable_ - you can add, remove, and change their entries whenever you please. Dictionaries are designed to allow very fast lookup of information, and this design requires that the value of a key and therefore its location in memory can be relied upon not to change.  
 If you need an immutable sequence of entries, you can use a _tuple_.
   
-##Exercise - 5
+## Exercise - 5
 
 Create a dictionary with key-value pairs
 ```
@@ -469,7 +469,7 @@ Remove all the items from the dict
 my_dict.clear()
 ```
 
-###For Loops
+### For Loops
 Time for some real programming. The biggest motivation for researches to learn a programming language is the opportunity to automate repetitive tasks and analyses.
 
 For loops define a set of steps that will be carried out for all items in a sequence. The items in the sequence will be taken one-at-a-time, and the loop performed, until there are no more items to process.
@@ -479,7 +479,7 @@ for season in ['Spring', 'Summer', 'Autumn', 'Winter']:
 	print(season)
 ```
 
-####Important Points
+#### Important Points
 - syntax: whitespace, `:`, `for` statement and `in` operator
 - the "loop variable" - `season` in the example above
   - stores the value aken from the sequence in the current iteration.
