@@ -28,6 +28,19 @@ Type conversions:
   - Triple Quotes
     - Multi line strings can be specified by triple quotes (""" or ''')
 
+### Comments 
+
+Comments are preceded by a **#**, and are completely ignored by the python interpreter.
+
+``` 
+# Comments can be on their own line
+print("Hello again!") # Comments can also be after line of code.
+```
+
+Comments are an incredibly useful way to keep track of what you are doing in
+your code. Use comments to document what you do as much as possible, it will
+pay off in the long run.
+
 ##Exercise - 1
 
 - Print more strings
