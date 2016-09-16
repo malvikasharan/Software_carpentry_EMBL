@@ -196,8 +196,8 @@ shopping_dict = {'item-0': 'bread', 'item-1': 'potatoes',
                  'item-2': 'eggs', 'item-3': 'flour', 
                  'item-4': 'rubber duck', 'item-5': 'pizza', 
                  'item-6': 'milk'}
-for item in shopping:
-  print(item)
+for item in shopping_dict:
+  print(item, "is:", shopping_dict[item]) 
 ```
 Example - 4
 
