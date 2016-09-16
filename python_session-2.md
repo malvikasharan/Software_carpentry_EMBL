@@ -57,7 +57,8 @@ temperature = input()
 
 Now try this block of code
 ```
-temperature = input()
+user_input = input()  # input returns a "string"
+temperature = int(user_input)  # convert from a "string" to an "int"
 if temperature > 25:
     print("Nice weather!")
 elif temperature < 25:
@@ -87,7 +88,8 @@ else:
 
 - Option - 2: connecting conditions by Boolean (and, or, not)
 ```
-temperature = input()
+user_input = input()  # input returns a "string"
+temperature = int(user_input)  # convert from a "string" to an "int"
 if temperature >= 25 and temperature < 37:
     print("Nice weather!")
 elif temperature < 25:
@@ -143,7 +145,8 @@ else:
 This is a Docstring. 
 This script gives its opinion on weather
 """
-temperature = input()
+user_input = input()  # input returns a "string"
+temperature = int(user_input)  # convert from a "string" to an "int"
 if temperature >= 25 and temperature <= 37: # checks if the value is between 24 and 37
     print("Nice weather!")
 elif temperature < 25:                      # checks if the value is less than 25
