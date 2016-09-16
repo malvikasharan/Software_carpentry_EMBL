@@ -312,7 +312,7 @@ print(current_greet)                # global variables can be further manipulate
 
 ### Exercises
 
-#### Let’s take one of our older codes and write them in function
+#### Let"s take one of our older codes and write them in function
 
 
 ###Using Modules

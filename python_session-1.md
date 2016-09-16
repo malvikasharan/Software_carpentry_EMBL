@@ -6,10 +6,10 @@ Learn the basics (what is? how to?)
 
 ###Classic beginning with "Hello World!"
 
-- Run Python (Type ‘python’ + click run button)
+- Run Python (Type "python" + click run button)
 - Print something
 ```
-print(“Hello World!”)
+print('Hello World!')
 ```
 - pandas import, read_table, plot() example
 
@@ -21,12 +21,12 @@ Type conversions:
 
 - int(): Integers or whole numbers of any length like 2, 30, 1000
 - float(): Floats or floating point numbers like 1.9, 30.01, 1e3 
-- str(): String or sequence of characters like “Hello”,  “1 World”, “&”
+- str(): String or sequence of characters like 'Hello',  '1 World', '&'
   - Single quote and double quotes
     - Either of the quote can be used to print a string
     - Spaces, tabs, comma etc. inside the quotes are preserved
   - Triple Quotes
-    - Multi line strings can be specified by triple quotes (‘’’ or “””)
+    - Multi line strings can be specified by triple quotes (""" or ''')
 
 ##Exercise - 1
 
@@ -39,13 +39,13 @@ Type conversions:
   - Hint 2: use plus sign (+) to connect 
     - This gives error (or sum, when int1+int2) with numbers, how to solve this?
 - Print a string with double quote
-  - Example: “this string appears with double quotes”
+  - Example: 'this string appears with double quotes'
 
 ###Variables
 
 - Using literal constants will become boring (what does Python do if you write everything on your own?)
 - Variables are the instances for which different values can be assigned
-  - Allow storing of information in your computer’s memory
+  - Allow storing of information in your computer"s memory
 - We need a method to access them
   - by giving them names (Identifiers)
 - value assignment is done with single equals symbol `=`
@@ -65,15 +65,15 @@ The string format operators allows formatting output of strings, substituting in
 
 Previous example
 ```
-print(“Age of”, name, “is”, age)
+print('Age of', name, 'is', age)
 ```
 Pythonic way 1: 
 ```
-print(“Age of {} is {}”.format(name, age))
+print('Age of {} is {}'.format(name, age))
 ```
 Pythonic way 2: 
 ```
-print(“Age of %s is %s” % (name, age))
+print('Age of %s is %s' % (name, age))
 ```
 There are several options with %:
 - %s: string
@@ -146,7 +146,7 @@ x * y
 ```
 Multiply a string with y
 ```
-‘X’ * y
+"X" * y
 ```
 Return x to the power of y
 ```
@@ -237,7 +237,7 @@ my_list = []
 ```
 A list with values are created as
 ```
-my_list = [1, 2, ‘a’, ‘b’]
+my_list = [1, 2, "a", "b"]
 ```
 
 #### Aside - objects, errors, help(), and dir()
@@ -257,11 +257,11 @@ help(list)
 
 Create a list with five items and follow the exercise
 ```
-my_list = [1, 2, ‘C’, 4, ‘E’]
+my_list = [1, 2, "C", 4, "E"]
 ```
 Add/append an item
 ```
-my_list.append(‘X’)
+my_list.append("X")
 ```
 Access the list item by index, which are the position of items (counted from 0)
 Access the 1st item (square brackets to define the index)
@@ -292,15 +292,15 @@ Access items at the index 2 to the last position (?)
 ```
 Insert an item in the 4th position
 ```
-my_list.insert(3, ‘X’)
+my_list.insert(3, "X")
 ```
 Check the items in the list and find the number of items
 ```
 len(my_list)
 ```
-Remove ‘X’ from the list. Check the length again
+Remove "X" from the list. Check the length again
 ```
-my_list.remove(‘X’)
+my_list.remove("X")
 ```
 Remove an item from a position from any index (i=3)
 ```
@@ -331,22 +331,22 @@ list_num = [1, 2, 3, 4]
 ```
 Convert a string into list
 ```
-my_string = ‘convert string into list’
+my_string = "convert string into list"
 list(my_string)
 ```
 Count the occurrence of an item
 - hint-1: 
 ```
-list(‘convert string into list’).count(‘t’)
+list("convert string into list").count("t")
 ```
 - hint-2: 
 ```
-new_list = list(‘convert string into list’)
-new_list.count(‘t’)
+new_list = list("convert string into list")
+new_list.count("t")
 ```
 Convert a string into list by splitting it by space
 ```
-my_string.split(‘  ’)
+my_string.split("  ")
 ```
 Get unique items of the list
 ```
@@ -392,7 +392,7 @@ my_dict()
 A dictionary contains a set of key-value pairs, where a key and its value are separated by a colon (:)
 
 ```
-my_dict = {‘Key_1’: ‘Val_1’}
+my_dict = {"Key_1": "Val_1"}
 ```
 
 keys must be unique (trying to create a second entry in the dict for a key will overwrite the existing value for that key)
@@ -405,19 +405,19 @@ If you need an immutable sequence of entries, you can use a _tuple_.
 
 Create a dictionary with key-value pairs
 ```
-my_dict = {‘name’: ‘Khaleesi’, ‘age’: 20}
+my_dict = {"name": "Khaleesi", "age": 20}
 ```
 Access value by a key
 ```
-my_dict[‘name’]
+my_dict["name"]
 ```
 or 
 ```
-my_dict.get(‘name’)
+my_dict.get("name")
 ```
 Add more items to the dictionary
 ```
-my_dict[‘occupation’] = ‘Queen’
+my_dict["occupation"] = "Queen"
 ```
 Print all the items - note the order
 ```
@@ -437,13 +437,13 @@ my_dict.values()
 ```
 Remove a key-value pair
 ```
-my_dict.pop(‘age’)
+my_dict.pop("age")
 ```
 Remove the last key-value pair
 ```
 my_dict.popitem()
 ```
-Check if a key is in the dict: ‘location’ in my_dict and ‘age’ in my_dict
+Check if a key is in the dict: "location" in my_dict and "age" in my_dict
 ```
 ```
 Remove all the items from the dict
