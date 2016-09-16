@@ -2,9 +2,9 @@
 
 ##Aim of this session: 
 
-Control flow: automating repeated boring tasks using loops rather than actively commanding Python to do stuffs (print, add etc.)
+Flow control: automating repeated boring tasks using loops rather than actively commanding Python to do stuffs (print, add etc.)
 
-Control-flow allows Python to take a decision and do different things depending on different situations using `if` or `else` statements or `for loops`
+Flow control allows Python to take a decision and do different things depending on different situations using `if` or `else` statements or `for loops`
 
 ###if statements
 
