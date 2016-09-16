@@ -67,6 +67,10 @@ pay off in the long run.
 - The identifiers are case sensitive 
   - myname and MyName are different
 - must be unique (python will overwrite value of existing variable without warning you)
+- The name cannot start with a number, or any special symbol (e.g. $, %, @, -, etc...) except for "_" (underscore), which is OK.
+- The name cannot have any spaces or special characters (except for "-" (hyphen) and "_" (underscore))
+
+
 
 ####Conventions
 - The name starts with a (usually lower case) letter
