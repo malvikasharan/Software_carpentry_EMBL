@@ -459,8 +459,10 @@ Remove a key-value pair
 ```
 my_dict.pop("age")
 ```
-Check if a key is in the dict: "location" in my_dict and "age" in my_dict
+Check if a key is in the dict:
 ```
+"age" in my_dict
+"location" in my_dict
 ```
 Remove all the items from the dict
 ```
