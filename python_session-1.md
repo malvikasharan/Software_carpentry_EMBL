@@ -406,7 +406,7 @@ my_dict = {}
 ```
 or 
 ```
-my_dict()
+my_dict = dict()
 ```
 
 A dictionary contains a set of key-value pairs, where a key and its value are separated by a colon (:)
