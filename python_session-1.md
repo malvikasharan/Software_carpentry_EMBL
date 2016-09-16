@@ -324,7 +324,7 @@ my_list.remove("X")
 ```
 Remove an item from a position from any index (i=3)
 ```
-my_list.pop([i])
+my_list.pop(i)
 ```
 Get maximum value in the list
 ```
