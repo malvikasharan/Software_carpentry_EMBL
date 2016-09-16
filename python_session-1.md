@@ -478,12 +478,45 @@ For loops define a set of steps that will be carried out for all items in a sequ
 for season in ['Spring', 'Summer', 'Autumn', 'Winter']:
 	print(season)
 ```
+
 ####Important Points
 - syntax: whitespace, `:`, `for` statement and `in` operator
 - the "loop variable" - `season` in the example above
   - stores the value aken from the sequence in the current iteration.
 - python is __indentation sensitive__: All of the indented code after the for loop is part of the for loop.
 - "sequence" means list, dict, string, tuple, and more...
+
+For loops can also be used in dictionaries:
+
+```
+my_dict = {"eggs": 1, "bread": 1, "spam": 12}
+
+# by default, the for loop loops over the dictionary keys:
+for key in my_dict:
+    print(key)
+
+# you can use this to lookup dictionary values
+for key in my_dict:
+    value = my_dict[key]
+    print(key, ":", value)
+
+# alternatively, you can use "items()" to itterate over both keys and values
+for key, value in my_dict.items():
+    print(key, ":", value)
+```
+
+#### Aside - for loops and dictionaries
+
+It is important to know that dictionaries are NOT ordered. The order in which they are visited in the for loop is not necessarily the same order which you used to define the dictionary. For example:
+
+```
+my_dict = {"a": "aardvark"}
+my_dict["b"] = "bird" 
+
+for key, value in my_dict.items():
+    print(key, value)
+```
+
 
 ### if/else
 As well as looping, the other key ingredient to programming automated processes is "flow control" i.e. executing different instructions depending on some detectable factor.
