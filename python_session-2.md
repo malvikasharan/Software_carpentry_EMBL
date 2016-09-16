@@ -48,7 +48,7 @@ else:
     print("The temperature is 25 degree.")
 ```
 
-####Exercise - 1
+#### Exercise - 1
 
 We can interact with the commandline/terminal using `input()`, try it out by giving a value to the temperature on the commandline
 ```
@@ -318,7 +318,7 @@ print(current_greet)                # global variables can be further manipulate
 #### Let"s take one of our older codes and write them in function
 
 
-###Using Modules
+### Using Modules
 One of the great things about Python is the free availability of a _huge_ number of modules that can be imported into your code and used. Modules are developed with the aim of solving some particular problem or providing particular, often domain-specific, capabilities.  
 In order to import a module, it must first be installed and available on your system. We will cover this briefly later in the course.  
 A large number of modules are already available for import in the standard distribution of Python: this is known as the standard library. If you installed the Anaconda distribution of Python, you have even more modules already installed.  
@@ -333,7 +333,7 @@ import pandas
 data = pandas.read_table()
 data.plot()
 ```
-####Aside: Namespaces
+#### Aside: Namespaces
 Python uses namespaces a lot, to ensure appropriate separation of functions, attributes, methdos etc between modules and objects. When you import an entire module, the functions and classes available within that module are loaded in under the modules namespace - `pandas` in the example above.  
 It is possible to customise the namespace at the point of import, allowing you to e.g. shorten/abbreviate the module name to save some typing:
 
@@ -358,13 +358,13 @@ data = read_table()
 data.plot()
 ```
 
-####Conventions
+#### Conventions
 - You should perform all of your imports at the beginning of your code. This ensures that
   - users can easily identify the dependencies of a program, and 
   - that any lacking dependencies (causing fatal `ImportError` exceptions) are caught early in execution
 - the shortening of `numpy` to `np` and `pandas` to `pd` are very common, and there are others too - watch out for this when e.g. reading docs and guides/SO answers online.
 
-###Execises - Importing
+### Exercises - Importing
 ```
 --- numpy
 series_a = numpy.array([5, 5, 5, 5, 5])
@@ -378,10 +378,10 @@ import pandas --- pd
 data = pd.read_table()
 ```
 
-####Aside: Your Own Modules
+#### Aside: Your Own Modules
 Whenever you write some python code and save it as a script, with the `.py` file extension, you are creating your own module. If you define functions within that module, you can load them into other scripts and sessions.
 
-###Some Interesting Module Libraries to Investigate
+### Some Interesting Module Libraries to Investigate
 - sys
 - collections
 - math
