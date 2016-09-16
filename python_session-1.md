@@ -482,6 +482,7 @@ for season in ['Spring', 'Summer', 'Autumn', 'Winter']:
 - syntax: whitespace, `:`, `for` statement and `in` operator
 - the "loop variable" - `season` in the example above
   - stores the value aken from the sequence in the current iteration.
+- python is __indentation sensitive__: All of the indented code after the for loop is part of the for loop.
 - "sequence" means list, dict, string, tuple, and more...
 
 ### if/else
