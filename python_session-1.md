@@ -1,19 +1,19 @@
 #Python session - 1
 
-##Aim of this session: 
+## Aim of this session: 
 
 Learn the basics (what is? how to?)
 
-###Classic beginning with "Hello World!"
+### Classic beginning with "Hello World!"
 
-- Run Python (Type ‘python’ + click run button)
+- Run Python (Type "python" + click run button)
 - Print something
 ```
-print(“Hello World!”)
+print('Hello World!')
 ```
 - pandas import, read_table, plot() example
 
-###Literal Constants
+### Literal Constants
 
 We use the values of literals literally, these values represent themselves and nothing else.
 
@@ -21,14 +21,27 @@ Type conversions:
 
 - int(): Integers or whole numbers of any length like 2, 30, 1000
 - float(): Floats or floating point numbers like 1.9, 30.01, 1e3 
-- str(): String or sequence of characters like “Hello”,  “1 World”, “&”
+- str(): String or sequence of characters like 'Hello',  '1 World', '&'
   - Single quote and double quotes
     - Either of the quote can be used to print a string
     - Spaces, tabs, comma etc. inside the quotes are preserved
   - Triple Quotes
-    - Multi line strings can be specified by triple quotes (‘’’ or “””)
+    - Multi line strings can be specified by triple quotes (""" or ''')
 
-##Exercise - 1
+### Comments 
+
+Comments are preceded by a **#**, and are completely ignored by the python interpreter.
+
+``` 
+# Comments can be on their own line
+print("Hello again!") # Comments can also be after line of code.
+```
+
+Comments are an incredibly useful way to keep track of what you are doing in
+your code. Use comments to document what you do as much as possible, it will
+pay off in the long run.
+
+## Exercise - 1
 
 - Print more strings
 - Print numbers 
@@ -39,41 +52,45 @@ Type conversions:
   - Hint 2: use plus sign (+) to connect 
     - This gives error (or sum, when int1+int2) with numbers, how to solve this?
 - Print a string with double quote
-  - Example: “this string appears with double quotes”
+  - Example: 'this string appears with double quotes'
 
-###Variables
+### Variables
 
 - Using literal constants will become boring (what does Python do if you write everything on your own?)
 - Variables are the instances for which different values can be assigned
-  - Allow storing of information in your computer’s memory
+  - Allow storing of information in your computer"s memory
 - We need a method to access them
   - by giving them names (Identifiers)
 - value assignment is done with single equals symbol `=`
 
-####Rules:
+#### Rules:
 - The identifiers are case sensitive 
   - myname and MyName are different
 - must be unique (python will overwrite value of existing variable without warning you)
+- The name cannot start with a number, or any special symbol (e.g. $, %, @, -, etc...) except for "_" (underscore), which is OK.
+- The name cannot have any spaces or special characters (except for "-" (hyphen) and "_" (underscore))
 
-####Conventions
+
+
+#### Conventions
 - The name starts with a (usually lower case) letter
 - Followed by letters, underscores or digits (name_1)
 
-###String formatter
+### String formatter
 
 The string format operators allows formatting output of strings, substituting in values of variables
 
 Previous example
 ```
-print(“Age of”, name, “is”, age)
+print('Age of', name, 'is', age)
 ```
 Pythonic way 1: 
 ```
-print(“Age of {} is {}”.format(name, age))
+print('Age of {} is {}'.format(name, age))
 ```
 Pythonic way 2: 
 ```
-print(“Age of %s is %s” % (name, age))
+print('Age of %s is %s' % (name, age))
 ```
 There are several options with %:
 - %s: string
@@ -81,7 +98,7 @@ There are several options with %:
 - %f: float point number
 - %.2f: float point number to 2 decimal places
 
-##Exercise - 2
+## Exercise - 2
 
 Assign any value to variable i, print and check the value
 ```
@@ -109,7 +126,7 @@ c = 3
 a, b, c = 1, 2, 3
 ```
 
-###Operators and operands
+### Operators and operands
 
 Operators are functionality that do something and can be represented by the symbols such as + or special keywords
 - Operators operate on data referred as operands, here the numbers and letters are operands and the symbols (+,* ...) are operators
@@ -122,8 +139,11 @@ Operators are functionality that do something and can be represented by the symb
 ```
 'a' + 'b'
 ```
+```
+'5' + '3' # what do you expect here?
+```
 
-##Exercise - 3
+## Exercise - 3
 
 Assign numerical values to x and y and do the following
 
@@ -146,7 +166,7 @@ x * y
 ```
 Multiply a string with y
 ```
-‘X’ * y
+"X" * y
 ```
 Return x to the power of y
 ```
@@ -185,7 +205,7 @@ Check if x is not equal to y
 x != y
 ```
 
-###Math operators and operands
+### Math operators and operands
 
 We can use multiple operators together
 
@@ -224,7 +244,7 @@ a *= 3
 a
 ```
 
-###Data structure - 1
+### Data structure - 1
 
 Data Structures are containers that hold/store a collection of data/object together 
 There are two built-in data structures that we will discuss here
@@ -237,7 +257,7 @@ my_list = []
 ```
 A list with values are created as
 ```
-my_list = [1, 2, ‘a’, ‘b’]
+my_list = [1, 2, "a", "b"]
 ```
 
 #### Aside - objects, errors, help(), and dir()
@@ -248,7 +268,7 @@ my_list = [1, 2, ‘a’, ‘b’]
 - use `help(x)` to see the documentation (if it exists) for `x`
 - use `dir(y)` to see the available attributes and methods for `y`
 
-##Exercise - 4
+## Exercise - 4
 
 Print and check at each step
 ```
@@ -257,11 +277,11 @@ help(list)
 
 Create a list with five items and follow the exercise
 ```
-my_list = [1, 2, ‘C’, 4, ‘E’]
+my_list = [1, 2, "C", 4, "E"]
 ```
 Add/append an item
 ```
-my_list.append(‘X’)
+my_list.append("X")
 ```
 Access the list item by index, which are the position of items (counted from 0)
 Access the 1st item (square brackets to define the index)
@@ -292,19 +312,19 @@ Access items at the index 2 to the last position (?)
 ```
 Insert an item in the 4th position
 ```
-my_list.insert(3, ‘X’)
+my_list.insert(3, "X")
 ```
 Check the items in the list and find the number of items
 ```
 len(my_list)
 ```
-Remove ‘X’ from the list. Check the length again
+Remove "X" from the list. Check the length again
 ```
-my_list.remove(‘X’)
+my_list.remove("X")
 ```
 Remove an item from a position from any index (i=3)
 ```
-my_list.pop([i])
+my_list.pop(i)
 ```
 Get maximum value in the list
 ```
@@ -320,7 +340,7 @@ my_list.reverse()
 ```
 Sort items of the list
 ```
-sorted(my_list)
+my_list.sort()
 ```
 Reverse the items again
 ```
@@ -331,22 +351,22 @@ list_num = [1, 2, 3, 4]
 ```
 Convert a string into list
 ```
-my_string = ‘convert string into list’
+my_string = "convert string into list"
 list(my_string)
 ```
 Count the occurrence of an item
 - hint-1: 
 ```
-list(‘convert string into list’).count(‘t’)
+list("convert string into list").count("t")
 ```
 - hint-2: 
 ```
-new_list = list(‘convert string into list’)
-new_list.count(‘t’)
+new_list = list("convert string into list")
+new_list.count("t")
 ```
 Convert a string into list by splitting it by space
 ```
-my_string.split(‘  ’)
+my_string.split("  ")
 ```
 Get unique items of the list
 ```
@@ -376,7 +396,7 @@ Find common items in the lists
 set(list1).intersection(list2)
 ```
 
-###Data structure - 2
+### Data structure - 2
 
 Dictionary (dict): a list of key-value pairs where key can be any numbers or string and values can be any arbitrary python object
 
@@ -386,38 +406,38 @@ my_dict = {}
 ```
 or 
 ```
-my_dict()
+my_dict = dict()
 ```
 
 A dictionary contains a set of key-value pairs, where a key and its value are separated by a colon (:)
 
 ```
-my_dict = {‘Key_1’: ‘Val_1’}
+my_dict = {"Key_1": "Val_1"}
 ```
 
 keys must be unique (trying to create a second entry in the dict for a key will overwrite the existing value for that key)
 
-####Aside: mutable vs non-mutable
+#### Aside: mutable vs non-mutable
 Why did we say that you can only use strings and numbers as keys in a dict? These object types are _immutable_ - their value cannot be changed in place. Lists and dictionaries are _mutable_ - you can add, remove, and change their entries whenever you please. Dictionaries are designed to allow very fast lookup of information, and this design requires that the value of a key and therefore its location in memory can be relied upon not to change.  
 If you need an immutable sequence of entries, you can use a _tuple_.
   
-##Exercise - 5
+## Exercise - 5
 
 Create a dictionary with key-value pairs
 ```
-my_dict = {‘name’: ‘Khaleesi’, ‘age’: 20}
+my_dict = {"name": "Khaleesi", "age": 20}
 ```
 Access value by a key
 ```
-my_dict[‘name’]
+my_dict["name"]
 ```
 or 
 ```
-my_dict.get(‘name’)
+my_dict.get("name")
 ```
 Add more items to the dictionary
 ```
-my_dict[‘occupation’] = ‘Queen’
+my_dict["occupation"] = "Queen"
 ```
 Print all the items - note the order
 ```
@@ -437,21 +457,19 @@ my_dict.values()
 ```
 Remove a key-value pair
 ```
-my_dict.pop(‘age’)
+my_dict.pop("age")
 ```
-Remove the last key-value pair
+Check if a key is in the dict:
 ```
-my_dict.popitem()
-```
-Check if a key is in the dict: ‘location’ in my_dict and ‘age’ in my_dict
-```
+"age" in my_dict
+"location" in my_dict
 ```
 Remove all the items from the dict
 ```
 my_dict.clear()
 ```
 
-###For Loops
+### For Loops
 Time for some real programming. The biggest motivation for researches to learn a programming language is the opportunity to automate repetitive tasks and analyses.
 
 For loops define a set of steps that will be carried out for all items in a sequence. The items in the sequence will be taken one-at-a-time, and the loop performed, until there are no more items to process.
@@ -460,11 +478,46 @@ For loops define a set of steps that will be carried out for all items in a sequ
 for season in ['Spring', 'Summer', 'Autumn', 'Winter']:
 	print(season)
 ```
-####Important Points
+
+#### Important Points
 - syntax: whitespace, `:`, `for` statement and `in` operator
 - the "loop variable" - `season` in the example above
   - stores the value aken from the sequence in the current iteration.
+- python is __indentation sensitive__: All of the indented code after the for loop is part of the for loop.
 - "sequence" means list, dict, string, tuple, and more...
+
+For loops can also be used in dictionaries:
+
+```
+my_dict = {"eggs": 1, "bread": 1, "spam": 12}
+
+# by default, the for loop loops over the dictionary keys:
+for key in my_dict:
+    print(key)
+
+# you can use this to lookup dictionary values
+for key in my_dict:
+    value = my_dict[key]
+    print(key, ":", value)
+
+# alternatively, you can use "items()" to itterate over both keys and values
+for key, value in my_dict.items():
+    print(key, ":", value)
+```
+
+#### Aside - for loops and dictionaries
+
+It is important to know that dictionaries are NOT ordered. The order in which they are visited in the for loop is not necessarily the same order which you used to define the dictionary. For example:
+
+```
+my_dict = {"a": "aardvark"}
+my_dict["b"] = "bird" 
+
+for key, value in my_dict.items():
+    print(key, value)
+```
+
+
 ### if/else
 As well as looping, the other key ingredient to programming automated processes is "flow control" i.e. executing different instructions depending on some detectable factor.
 
