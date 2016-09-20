@@ -14,3 +14,8 @@ print()
 len()
 
 No difference, only that you don’t have to write them yourself.
+
+Rules of writing function:
+Def name():
+    code block # similar to the if and for
+    
